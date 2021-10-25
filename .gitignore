@@ -1,59 +1,44 @@
-**/target/
-**/.idea/
-*.iml
-rebel.xml
-../logs/
-../case-mgt-base-common/.settings/
-../case-mgt-base-common/.idea/
-.project
-### /case-mgt-module-system/target/ ##
-/logs/
-/.metadata/
+######################################################################
+# Build Tools
 
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+
+######################################################################
+# IDE
 
 ### STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
-**/.settings
+.settings
 .springBeans
-.sts4-cache
-.log
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-.mvn
-mvnw*
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
+nbproject/private/
+build/*
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
-.vscode/
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+*.swp
 
-### generated files ###
-bin/
-gen/
-
-### MAC ###
-.DS_Store
-
-### Other ###
-logs/
-log
-temp/
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
