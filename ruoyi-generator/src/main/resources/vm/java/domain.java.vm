@@ -55,8 +55,6 @@ public class ${ClassName} extends ${Entity}
 #set($var2 = 'id')
 #if("${column.javaField}" == "${var2}")
     @TableId(value = "$column.javaField",type = IdType.AUTO)//指定自增策略
-#else
-    @TableField(value = "$column.javaField")
 #end
     private $column.javaType $column.javaField;
 
